@@ -20,7 +20,7 @@
                 <!-- start balance -->
                 <div class="stats shadow">
                     <div class="stat">
-                      <div class="stat-value" id="account-balance-cashout">9400</div>
+                      <div class="stat-value" id="account-balance">9400</div>
                       <div class="stat-desc">Available Balance</div>
                     </div>
                 </div>
@@ -30,15 +30,15 @@
 
                 <!-- user action buttons -->
                 <div>
-                  <button class="btn btn-lg">Add Money</button>
-                  <button class="btn btn-lg">Cash Out</button>
+                  <button id="add-money-button" class="btn btn-lg">Add Money</button>
+                  <button id="cash-out-button" class="btn btn-lg">Cash Out</button>
                 </div>
 
                  <div class="divider"></div>
 
                  <!-- add money form start -->
                     
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
+                <div id="add-money-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -62,7 +62,7 @@
 
 
                  <!-- cashout started -->
-                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                 <div id="cash-out-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                   <form class="card-body">
                     <div class="form-control">
                       <label class="label">
@@ -90,5 +90,6 @@
   <!-- for linking javaScript files -->
    <script src="./js files/home.js"></script>
    <script src="./js files/cashout.js"></script>
+   <script src="./js files/btn-clicked.js"></script>
 </body>
 </html>

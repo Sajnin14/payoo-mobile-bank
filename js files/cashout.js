@@ -6,15 +6,15 @@ document.getElementById('button-cash-out').addEventListener('click', function(ev
 
     if(inputPinCash === '1234'){
 
-        const accountBalance = document.getElementById('account-balance-cashout').innerText;
-        const accountBalanceNumber = parseFloat(accountBalance);
+        const totalAccountBalance = document.getElementById('account-balance').innerText;
+        const totalBalanceNumber = parseFloat(totalAccountBalance);
 
         const cashoutBalanceNumber = parseFloat(inputAmountCashout);
 
-        if(accountBalanceNumber >= cashoutBalanceNumber){
-            const currentBalance = accountBalanceNumber - cashoutBalanceNumber;
+        if(totalBalanceNumber >= cashoutBalanceNumber){
+            const currentBalance = totalBalanceNumber - cashoutBalanceNumber;
 
-            document.getElementById('account-balance-cashout').innerText = currentBalance;
+            document.getElementById('account-balance').innerText = currentBalance;
 
         }
 
