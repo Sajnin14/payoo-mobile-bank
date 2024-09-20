@@ -20,7 +20,7 @@
                 <!-- start balance -->
                 <div class="stats shadow">
                     <div class="stat">
-                      <div class="stat-value" id="account-balance">9400</div>
+                      <div class="stat-value" id="account-balance-cashout">9400</div>
                       <div class="stat-desc">Available Balance</div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
 
                  <!-- add money form start -->
                     
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl hidden">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -60,11 +60,35 @@
 
                  <!-- add money form end -->
 
+
+                 <!-- cashout started -->
+                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <form class="card-body">
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Amount</span>
+                      </label>
+                      <input id="input-amount-cashout" type="text" placeholder="Your Amount" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                      <label class="label">
+                        <span class="label-text">Pin</span>
+                      </label>
+                      <input id="input-pin-cashout" type="password" placeholder="Enter Your Pin" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control mt-6">
+                      <button id="button-cash-out" class="btn btn-primary">Cash Out</button>
+                    </div>
+                  </form>
+              </div>
+
+              <!-- cashout end -->
               </div>
             </div>
           </div>
     </main>
   <!-- for linking javaScript files -->
    <script src="./js files/home.js"></script>
+   <script src="./js files/cashout.js"></script>
 </body>
 </html>
